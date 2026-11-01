@@ -1,0 +1,115 @@
+=== BONNY LIGHT COMMODITY MODEL VALIDATION REPORT ===
+First date: 2006-01-02, Last date: 2025-12-05
+Brent at clip bounds percentage: 0.25%
+Distinct ng_output_zscore values: 240
+Inventory surprise change check passed (changes only on Wednesdays).
+2008 BL max: 148.13
+2008 Dec BL min: 41.3
+2011 BL mean: 115.96
+2012 BL mean: 112.27
+2013 BL mean: 110.86
+2014 BL mean: 103.43
+2016 BL min: 27.13
+2020 BL min: 19.49
+2022 BL max: 138.61
+2023 BL mean: 81.35
+2024 BL mean: 79.32
+2025 BL mean: 72.29
+Correlation BL vs Brent daily returns: 0.9553
+Correlation Brent 5d vs DXY 5d: -0.2492
+Correlation Inventory z vs Brent 5d return: -0.1220
+Lag-1 autocorrelation of dxy_logret_5d: 0.7961
+VIF for month_sin: 1.05
+VIF for month_cos: 1.06
+VIF for day_of_week: 1.00
+VIF for bl_price: 1.41
+VIF for bl_logret_1d: 1.28
+VIF for bl_vol_20d: 1.13
+VIF for bl_price_to_sma50: 1.73
+VIF for bl_brent_diff: 1.44
+VIF for brent_logret_5d: 1.89
+VIF for dxy_logret_5d: 1.09
+VIF for ng_output_zscore: 1.10
+VIF for us_inventory_surprise_z: 1.02
+
+=== STATISTICAL CHECKS & REPORTING ===
+                            count       mean        std        min        25%           50%        75%         max
+month_sin                  5200.0  -0.004833   0.707022  -1.000000  -0.866025 -2.449294e-16   0.500000    1.000000
+month_cos                  5200.0  -0.005479   0.707290  -1.000000  -0.866025 -1.836970e-16   0.500000    1.000000
+day_of_week                5200.0   2.000000   1.414350   0.000000   1.000000  2.000000e+00   3.000000    4.000000
+bl_price                   5200.0  79.656721  24.729750  19.490000  61.560000  7.730000e+01  96.950000  148.130000
+bl_logret_1d               5200.0  -0.000007   0.016184  -0.167687  -0.007992  2.603771e-04   0.008233    0.173265
+bl_vol_20d                 5200.0   0.014293   0.006679   0.004099   0.010060  1.231626e-02   0.016283    0.055889
+bl_price_to_sma50          5200.0   1.003102   0.096731   0.446687   0.952232  1.010951e+00   1.062795    1.285984
+bl_brent_diff              5200.0   2.291477   1.413564  -3.000000   1.440000  2.325000e+00   3.192500    6.000000
+brent_logret_5d            5200.0  -0.000022   0.038648  -0.237590  -0.020159  2.217580e-03   0.022458    0.172822
+dxy_logret_5d              5200.0  -0.000318   0.007262  -0.036544  -0.004092 -2.243820e-04   0.003681    0.037689
+ng_output_zscore           5200.0  -0.093458   1.248983  -4.550636  -0.720641  2.567932e-01   0.745136    1.743282
+us_inventory_surprise_z    5200.0   0.001216   1.000788  -4.159138  -0.610599  1.998139e-03   0.618862    4.627327
+target_bl_price_t_plus_5d  5200.0  79.656458  24.729949  19.490000  61.552500  7.730000e+01  96.950000  148.130000
+
+Yearly Bonny Light min / mean / max:
+         min        mean     max
+year                            
+2006   57.41   71.430423   85.82
+2007   54.06   75.128046   97.94
+2008   41.30  104.429198  148.13
+2009   41.21   67.525287   82.17
+2010   72.80   85.116820   99.62
+2011  100.23  115.959885  134.93
+2012   88.33  112.266820  127.64
+2013   97.52  110.863333  124.20
+2014   56.67  103.428659  123.30
+2015   33.71   51.114866   64.27
+2016   27.13   47.026475   59.40
+2017   47.43   55.465269   69.50
+2018   47.77   74.784636   89.74
+2019   52.19   64.757471   77.47
+2020   19.49   41.825115   68.78
+2021   54.54   76.510115   90.57
+2022   82.82  102.194038  138.61
+2023   69.14   81.349808   93.76
+2024   68.33   79.320229   96.59
+2025   60.98   72.288848   87.15
+
+Full Correlation Matrix:
+                           month_sin  month_cos  day_of_week  bl_price  bl_logret_1d  bl_vol_20d  bl_price_to_sma50  bl_brent_diff  brent_logret_5d  dxy_logret_5d  ng_output_zscore  us_inventory_surprise_z  target_bl_price_t_plus_5d
+month_sin                     1.0000    -0.0017       0.0001   -0.0386        0.0523      0.0062             0.1481        -0.0929           0.1029         0.0304            0.0733                   0.0045                    -0.0237
+month_cos                    -0.0017     1.0000      -0.0003   -0.1175       -0.0332      0.0072            -0.1833        -0.1210          -0.0669         0.0672            0.0723                   0.0273                    -0.1216
+day_of_week                   0.0001    -0.0003       1.0000    0.0007        0.0140      0.0003             0.0014        -0.0025          -0.0006         0.0002            0.0017                   0.0009                     0.0008
+bl_price                     -0.0386    -0.1175       0.0007    1.0000        0.0241     -0.2299             0.1750         0.4861           0.0553        -0.0725           -0.0087                   0.0001                     0.9928
+bl_logret_1d                  0.0523    -0.0332       0.0140    0.0241        1.0000     -0.0318             0.2870         0.0379           0.4658        -0.1112           -0.0012                  -0.0673                     0.0319
+bl_vol_20d                    0.0062     0.0072       0.0003   -0.2299       -0.0318      1.0000            -0.2423        -0.0729          -0.0804         0.0170           -0.0959                  -0.0376                    -0.2344
+bl_price_to_sma50             0.1481    -0.1833       0.0014    0.1750        0.2870     -0.2423             1.0000         0.1613           0.5725        -0.0773           -0.0373                  -0.0607                     0.2004
+bl_brent_diff                -0.0929    -0.1210      -0.0025    0.4861        0.0379     -0.0729             0.1613         1.0000           0.0159        -0.0051           -0.2371                   0.0094                     0.4812
+brent_logret_5d               0.1029    -0.0669      -0.0006    0.0553        0.4658     -0.0804             0.5725         0.0159           1.0000        -0.2492            0.0041                  -0.1220                     0.0748
+dxy_logret_5d                 0.0304     0.0672       0.0002   -0.0725       -0.1112      0.0170            -0.0773        -0.0051          -0.2492         1.0000           -0.0499                   0.0103                    -0.0644
+ng_output_zscore              0.0733     0.0723       0.0017   -0.0087       -0.0012     -0.0959            -0.0373        -0.2371           0.0041        -0.0499            1.0000                   0.0190                    -0.0027
+us_inventory_surprise_z       0.0045     0.0273       0.0009    0.0001       -0.0673     -0.0376            -0.0607         0.0094          -0.1220         0.0103            0.0190                   1.0000                     0.0011
+target_bl_price_t_plus_5d    -0.0237    -0.1216       0.0008    0.9928        0.0319     -0.2344             0.2004         0.4812           0.0748        -0.0644           -0.0027                   0.0011                     1.0000
+
+ADF test on bl_logret_1d: ADF statistic = -12.7595, p-value = 8.2010e-24
+Squared returns autocorr - Lag 1: 0.0743, Lag 5: 0.0637, Lag 10: 0.0808
+Excess kurtosis of bl_logret_1d: 9.2730
+Regime Calm (ID 0): Days = 2238, Return Std = 0.0128
+Regime Uptrend (ID 1): Days = 1150, Return Std = 0.0142
+Regime Downtrend (ID 2): Days = 1142, Return Std = 0.0157
+Regime Shock (ID 3): Days = 670, Return Std = 0.0266
+Day of week Monday: Return Std = 0.0178
+Day of week Tuesday: Return Std = 0.0165
+Day of week Wednesday: Return Std = 0.0164
+Day of week Thursday: Return Std = 0.0148
+Day of week Friday: Return Std = 0.0153
+
+Splits Row Counts & Date Ranges:
+Train: rows 0-3639 (3640 rows), 2006-01-02 to 2019-12-13
+Validation: rows 3645-4419 (775 rows), 2019-12-23 to 2022-12-09
+Test: rows 4425-5199 (775 rows), 2022-12-19 to 2025-12-05
+Train phases -> Bull: 21, Bear: 12, Shock episodes: 12
+Validation phases -> Bull: 6, Bear: 3, Shock episodes: 2
+Test phases -> Bull: 6, Bear: 10, Shock episodes: 3
+
+Validation Ridge - Dir Acc: 63.10%, R2: 0.1045
+Test Ridge - Dir Acc: 50.58%, R2: -0.0325
+Test Directional Accuracy Test (50.58%): PASSED
+Test R2 Test (-0.0325): PASSED
